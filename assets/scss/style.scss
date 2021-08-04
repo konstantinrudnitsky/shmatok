@@ -1,0 +1,415 @@
+@import "reset";
+
+@import url('roboto-boldcondensed.css');
+@import url('robotocondensed-regular.css');
+.wrapper{
+	background: url('../images/shmatok-background.png') center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	/*height: 100%;*/
+}
+.item{
+	z-index: 99;
+	padding-top: 10px;
+}
+.center{
+	max-width: 1280px;
+	min-width: 320px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+@-webkit-keyframes glare {
+  from {
+    right: 120%;
+  }
+  20%,
+  to {
+    right: -45%;
+  }
+}
+@keyframes glare {
+  from {
+    right: 120%;
+  }
+  20%,
+  to {
+    right: -45%;
+  }
+}
+*:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+*:focus::moz-placeholder{
+	color: transparent;
+}
+*:focus:-ms-input-placeholder{
+	color: transparent;
+}
+*:focus:-moz-placeholder{
+	color: transparent;
+}
+.bgfon{
+	background: rgba(0,0,0, 0.7);
+	position: absolute;
+	left: 0; right: 0;
+	top:0; bottom:0;
+	z-index: 1;
+}
+header{
+	display: -webkit-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+header .info_contact{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.heght{
+	margin-top: 150px;
+}
+header .info_contact .desc{
+	margin-left: 20px;
+}
+header .info_contact .desc span{
+	font-family: 'robotocondensed-bold.css';
+	display: block;
+	color: #b1b1b1;
+	font-size: 13px;
+	line-height: 16px;
+}
+header .social{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+header .social .instagram{
+	display: block;
+	margin-left: 10px;
+}
+header .social .instagram ins{
+	font-family: 'robotocondensed-bold.css';
+	color: #00bf0f;
+	font-size: 13px;
+	display: block;
+}
+header .social .instagram a{
+	font-family: 'robotocondensed-bold.css';
+	color: #fff;
+	font-size: 13px;
+}
+header .social .instagram a:hover{
+	color: #00bf0f;
+	-webkit-transition: .2s;
+ 	transition: .2s;
+}
+header .tel{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+header .tel img{
+	width: 30px;
+}
+header .tel .phone{
+	margin-right: 10px;
+}
+header .tel .contact{
+	text-align: center;
+}
+header .tel .contact a{
+	font-family: 'Roboto Bold Condensed';
+	font-size: 28px;
+	color: #fff;
+	padding-bottom: 5px;
+	display: block;
+	text-decoration: none;
+}
+header .tel .contact a:hover{
+	color: #00bf0f;
+	-webkit-transition: .2s;
+ 	transition: .2s;
+ 	text-decoration: underline;
+}
+header .tel .contact span{
+	font-family: 'robotocondensed-bold.css';
+	color: #b1b1b1;
+	font-size: 13px;
+}
+section{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+section .left .name{
+	padding: 0 120px 0px 0px;
+}
+section .left .name h1{
+	font-family: 'Roboto Bold Condensed';
+	font-size: 48px;
+	line-height: 57px;
+	color: #fff;
+}
+section .left .name h1 b{
+	color: #00bf0f;
+}
+section .left ul{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+        -webkit-box-align: start;
+    -ms-flex-align: start;
+            -ms-grid-row-align: flex-start;
+        align-items: flex-start;
+        padding-top: 100px;
+}
+section .left ul li{
+	width: 400px;
+	margin-bottom: 15px;
+}
+section .left ul li .triggers{
+	display: inline-block;
+	padding: 10px 10px;
+}
+section .left ul li .triggers h3{
+	font-family: 'Roboto Bold Condensed';
+	padding: 0px 0 7px 0;
+	font-size: 20px;
+	color: #fff;
+	display: block;
+}
+section .left ul li .triggers ins{
+	font-family: 'robotocondensed-bold.css';
+	color: #b1b1b1;
+	font-size: 18px;
+	line-height: 22px;
+	width: 200px;
+}
+section .right .call h2{
+	font-family: 'robotocondensed-bold.css';
+	font-size: 24px;
+	color: #fff;
+}
+section .right .price{
+	padding-top: 20px;
+}
+section .right form{
+	text-align: center;
+	padding-top: 20px;
+}
+section .right form input[type="text"]{
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	text-align: center; 
+}
+section .right form input[type="text"].error{
+	border: 3px solid red;
+}
+section .right .info_action{
+	text-align: center;
+	padding-top: 20px;
+}
+section .right .info_action p{
+	font-family: 'Roboto Bold Condensed';
+	font-size: 24px;
+	color: #fff;
+}
+section .right span{
+	font-family: 'Roboto Bold Condensed';
+	font-size: 16px;
+	line-height: 32px;
+	color: #fff;
+}
+section .right form .sabmit{
+	text-align: center;
+	padding-top: 20px;
+}
+section .right form .sabmit button{
+	font-family: 'robotocondensed-bold.css';
+	font-size: 24px;
+	border: 0;
+	background: #ccff00;
+	border-radius: 10px;
+	padding: 10px 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0px 0px 40px #FFD700;
+}
+section .right form .sabmit button:after{
+	content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 120px;
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  background-color: rgba(255,255,255, 1);
+  top: -30%;
+  right: 100%;
+  overflow: hidden;
+  -webkit-animation: glare 4s ease-in-out infinite;
+  animation: glare 4s ease-in-out infinite;
+}
+section .right form .sabmit button:hover{
+	background: #19ff15;
+}
+section .right form .sabmit button ins{
+	display: block;
+	font-size: 18px;
+	font-weight: 100;
+	text-transform: none;
+}
+.item footer{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+footer p{
+	font-family: 'robotocondensed-bold.css';
+	color: #b1b1b1;
+	font-size: 18px;
+	line-height: 24px;
+	a{
+		color: #00bf0f;
+		&:hover{
+			color: #b1b1b1;
+			transition: .2s;
+		}
+	}
+}
+
+.wrapper .error{
+	text-align: center;
+	margin-top: 150px;
+}
+.wrapper .error h1{
+	font-family: 'Roboto Bold Condensed';
+	font-size: 70px;
+	text-transform: uppercase;
+	color: #00bf0f;
+}
+@media screen and (max-width: 1366px){
+	.wrapper{
+		height: 100%;
+	}
+	.heght{
+		margin-top: 100px;
+	}
+	section .left .name h1{
+		font-size: 40px;
+    	line-height: 47px;
+	}
+	section .right .price img{
+		width: 320px;
+	}
+	section .right .call h2{
+		font-size: 21px;
+	}
+	section .right .info_action p{
+		font-size: 21px;
+	}
+	section .right form input[type="text"]{
+		width: 155px;
+		margin-bottom: 10px;
+	}
+	section .right form .sabmit button{
+		font-size: 21px;
+	}
+}
+@media screen and (max-width: 1024px){
+	section .left .name h1{
+		font-size: 32px;
+		line-height: 37px;
+	}
+	section{
+		display: block;
+		text-align: center;
+	}
+	section .left .name{
+		padding: 0 0 0 0;
+	}
+	section .left ul{
+		display: inline-block;
+		text-align: center;
+	}
+	section .left ul li{
+		width: 284px;
+	}
+}
+@media screen and (max-width: 760px){
+	header .social{
+		display: block;
+		text-align: center;
+	}
+	header .info_contact{
+		display: block;
+	}
+	header .info_contact .desc{
+		margin-left: 0;
+		text-align: center;
+	}
+	header .tel img{
+		width: 20px;
+	}
+	header .tel .contact a{
+		font-size: 21px;
+	}
+	.wrapper .error{
+		text-align: center;
+		margin-top: 100px;
+	}
+	.wrapper .error h1{
+		font-family: 'Roboto Bold Condensed';
+		font-size: 50px;
+		text-transform: uppercase;
+		color: #00bf0f;
+	}
+}
+@media screen and (max-width: 490px){
+	header{
+		display: block;
+    text-align: center;
+	}
+	header .tel{
+		display: block;
+		padding-top: 10px;
+	}
+	header .social{
+		margin: 10px 0;
+	}
+	section .left .name h1{
+		font-size: 28px;
+		line-height: 32px;
+	}
+	header .tel img{
+		display: none;
+	}
+	.heght{
+		margin-top: 50px;
+	}
+	section .left ul{
+		padding-top: 50px;
+	}
+	footer p{
+		font-size: 16px;
+	}
+	section .right .price img{
+		width: 300px;
+	}
+	section .right form input[type="text"]{
+		width: 230px;
+	}
+}
